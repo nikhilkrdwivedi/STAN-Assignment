@@ -5,8 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "both": "node ./processes/run.js",
-    "cleanup": "node ./utils/cleanupRedis.js"
+    "counter": "node execute/counter.js",
+    "cleanup": "node execute/cleanup-redis.js",
+    "thread_1_pro": "node execute/race-conditions-with-problems.js",
+    "thread_2_pro": "node execute/race-conditions-with-problems.js",
+    "rabbitmq-consumer": "node execute/rabbitmq-consumer.js",
+    "thread_1_sol": "node execute/race-conditions-with-solutions.js",
+    "thread_2_sol": "node execute/race-conditions-with-solutions.js"
   },
   "keywords": [],
   "author": "",

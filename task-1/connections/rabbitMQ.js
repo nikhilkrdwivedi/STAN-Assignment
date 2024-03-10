@@ -6,7 +6,6 @@ const RABBIT_MQ_URL = process.env.RABBIT_MQ_URL || '';
 
 export async function connectToRabbitMQ() {
     try {
-        console.log('👉🏻 Line 7 : ', RABBIT_MQ_URL);
 
         if (!RABBIT_MQ_URL?.length) {
             console.log("RABBIT_MQ_URL_IS_MISSING")
